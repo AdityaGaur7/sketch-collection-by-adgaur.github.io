@@ -180,4 +180,7 @@ button:hover {
     .text{
        display: none;
     }
+    .link a img{
+        width:3vw;
+        height:auto;
 }

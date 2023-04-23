@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .34s all ease;
+}
+
+
+.container {
+    margin-top: 10vh;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 7%;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    grid-gap: 50px;
+
+}
+.text{
+font-size: 16px;
+    text-align: left;
+    margin-left: 10vw;
+   
+
+    font-weight: 530;
+}
+
+video,
+.box img {
+    width: 100%;
+}
+
+.box a {
+    -webkit-filter: blur(1.5px);
+    filter: blur(1.5px);
+}
+
+.box a:hover {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    -webkit-filter: brightness(20px);
+
+    filter: hue-rotate(20px);
+    transform: scale(1.4);
+
+    box-shadow: 13px 14px 13px rgb(0, 0, 0);
+}
+
+.box a img:hover{
+    transform: rotate(10deg);
+}
+
+.navbar {
+    height: 12vh;
+    z-index: 10;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0%;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+
+#gif {
+    width: 5.5vw;
+    border-radius: 50%;
+    height: auto;
+    margin: 0px 2vw;
+}
+
+#logo {
+    height: 8vh;
+    margin: 2vh;
+    width: auto;
+}
+#logo:hover{
+    transform: scale(1.2);
+}
+
+.footer {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(36, 30, 30);
+}
+
+.footer h4 {
+    color: aliceblue;
+    font-size: 20px;
+    font-family: cursive;
+    text-align: center;
+
+    font-weight: 500;
+}
+
+.link {
+    margin-left: 10vw;
+}
+
+.link a img {
+    width: 2vw;
+    height: auto;
+    margin: 3px;
+    border-radius: 10px;
+
+}
+
+.name {
+    color: white;
+    font-family: cursive;
+    font-weight: 700;
+    margin: 2vw 3vh;
+}
+.name h2:hover{
+    transform: translatex(-70px);
+    color: rgb(247, 243, 9);
+    text-shadow: 4px 5px 5px rgb(248, 248, 245);
+    font-size: 30px;
+}
+
+.link a img:hover {
+    transform: rotate(180deg) scale(1.2);
+
+}
+
+button {
+    position: fixed;
+    top: 3.5%;
+    z-index: 11;
+    left: 10%;
+    padding: 1vw;
+    font-size: 20px;
+    border-radius: 20px;
+    font-family: fantasy;
+
+}
+
+button:hover {
+    transform: rotate(360deg);
+    box-shadow: 2px 5px 4px rgb(9, 5, 5);
+}
+
+@media (max-width:600px) {
+    .name {
+        display: none;
+    }
+
+    #logo {
+        width: auto;
+        height: 12vw;
+    }
+
+    #gif {
+        height: 8vh;
+        width: auto;
+    }
+
+    .navbar {
+        height: 10vh;
+    }
+
+    .box a,
+    img {
+        filter: none;
+
+
+    }
+    .text{
+       display: none;
+    }
+}
